@@ -11,27 +11,34 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center bg-white p-4 text-black fixed w-full z-50 h-16 shadow-md">
+    <nav className="flex justify-between items-center bg-white p-4 text-black fixed w-full z-50 h-16">
       <div className="flex items-center space-x-4">
-      <div className="overflow-hidden h-12 w-28">  {/* Adjust height as needed */}
-          <img 
-            src={logo} 
-            alt="ReadON Logo" 
-            className="h-full w-full object-cover"
-          />
-        </div>
-        {/* <h1 className="text-xl font-bold">ReadON</h1> */}
+  {/* Enlarged Logo with increased background-size */}
+  <div 
+    className="overflow-hidden h-16 w-48 relative" 
+ 
+  >
+    {/* Fallback for when image is not loaded */}
+    <img 
+      src={logo} 
+      alt="ReadON Logo" 
+      className="h-full w-full object-cover pt-1"  // Using object-contain to keep image proportions
+      style={{backgroundSize: '90%' }}
+    />
+  </div>
+</div>
+
+      {/* Navbar Links - Increased Gap Between Links */}
+      <div className="flex space-x-8 flex-grow justify-center"> {/* Increased gap between links */}
+        <Link to="home" smooth={true} duration={500} className="cursor-pointer ">Home</Link>
+        <Link to="about" smooth={true} duration={500} className="cursor-pointer ">About</Link>
+        <Link to="whychooseus" smooth={true} duration={500} className="cursor-pointer ">Why Choose Us?</Link>
+        <Link to="benefits" smooth={true} duration={500} className="cursor-pointer ">Benefits</Link>
+        <Link to="approach" smooth={true} duration={500} className="cursor-pointer ">Our Approach</Link>
       </div>
-      <div className="flex space-x-4">
-        <Link to="home" smooth={true} duration={500} className="cursor-pointer">Home</Link>
-        <Link to="about" smooth={true} duration={500} className="cursor-pointer">About</Link>
-        <Link to="whychooseus" smooth={true} duration={500} className="cursor-pointer">Why Choose Us?</Link>
-        <Link to="benefits" smooth={true} duration={500} className="cursor-pointer">Benefits</Link>
-        <Link to="approach" smooth={true} duration={500} className="cursor-pointer">Our Approach</Link>
-      </div>
+
+      {/* Language Selector and Sign In Button */}
       <div className="flex items-center space-x-4">
-        
-        {/* Language Selector */}
         <div className="relative">
           <button 
             onClick={() => setLanguageDropdownOpen(!isLanguageDropdownOpen)} 
@@ -39,10 +46,9 @@ const Navbar = () => {
           >
             Language
           </button>
-            {/* Sign In Button */}
-            <button className="bg-[#FB8500] text-black px-4 py-2 rounded hover:bg-[#dc933f] transition">
-                  Sign In
-            </button>
+          <button className="bg-[#FB8500] text-black px-4 py-2 rounded hover:bg-[#dc933f] transition">
+            Sign In
+          </button>
           {/* Language Dropdown */}
           {isLanguageDropdownOpen && (
             <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-300 rounded shadow-lg">
@@ -59,7 +65,6 @@ const Navbar = () => {
                 >
                   India
                 </li>
-                {/* Add more languages here as needed */}
               </ul>
             </div>
           )}

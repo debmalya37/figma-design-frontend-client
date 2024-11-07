@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        helvetica: ['Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Montserrat', 'Arial', 'sans-serif'], // Set Montserrat as the primary font
       },
       fontSize: {
         '14pt': '14pt',

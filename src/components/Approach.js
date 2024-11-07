@@ -54,7 +54,7 @@ const Approach = () => {
                 style={{ fontFamily: 'Helvetica, Arial', fontSize: '18pt' }}
               >
                 <h3
-                  className={`text-lg font-semibold ${
+                  className={`text-2xl font-semibold ${
                     expandedSection === item.id ? 'text-white' : 'text-[#003049]'
                   }`}
                   style={{ fontWeight: 'bold' }}
@@ -68,10 +68,12 @@ const Approach = () => {
                 >
                   {expandedSection === item.id ? '-' : '+'}
                 </span>
+                
               </div>
               {/* Content description */}
               {expandedSection === item.id && (
                 <div className="px-6 py-4 text-white" style={{ fontFamily: 'Helvetica, Arial', fontSize: '14pt' }}>
+                  <hr className='border-black'/>
                   <p>{item.description}</p>
                 </div>
               )}
@@ -81,7 +83,7 @@ const Approach = () => {
         {/* Button at the bottom */}
         <div className="flex justify-center mt-8">
           <button
-            className="bg-[#FB8500] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#e07b00] transition-colors"
+            className="bg-[#F58220] hover:bg-[#E07B00] text-[#0B254C] font-medium py-3 px-8 rounded-md transition duration-300 ease-in-out shadow-md"
             style={{ fontFamily: 'Helvetica, Arial', fontSize: '18pt' }}
           >
             Start an Assessment
