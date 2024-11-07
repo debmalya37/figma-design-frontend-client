@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/figma-design-frontend-client/static/css/main.f7c62611.css",
+    "main.js": "/figma-design-frontend-client/static/js/main.29b58702.js",
+    "static/js/453.d912fb83.chunk.js": "/figma-design-frontend-client/static/js/453.d912fb83.chunk.js",
+    "static/media/readon-logo.jpg": "/figma-design-frontend-client/static/media/readon-logo.2e96f7fffb299a8eb260.jpg",
+    "index.html": "/figma-design-frontend-client/index.html",
+    "main.f7c62611.css.map": "/figma-design-frontend-client/static/css/main.f7c62611.css.map",
+    "main.29b58702.js.map": "/figma-design-frontend-client/static/js/main.29b58702.js.map",
+    "453.d912fb83.chunk.js.map": "/figma-design-frontend-client/static/js/453.d912fb83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7c62611.css",
+    "static/js/main.29b58702.js"
+  ]
+}
